@@ -1,0 +1,9 @@
+# ENV.md
+- GPU: RTX 4090 (cc 8.9, 128 SM, 24GB HBM3, L2 72MB), nvidia-smi 名称 NVIDIA GeForce RTX 4090
+- Driver: 560.35.03
+- CUDA:12.8 (nvcc V12.8.93)
+- Nsight Compute: 2025.1.1.0
+- Pytorch: 2.8.0+cu128
+- 编译: nvcc -O3 -std=c++17 -arch=sm_89 -lineinfo -Xptxas -v
+- 计时: cudaEvent / torch.cuda.Event, warm up 20次, 计时 100 次取中位数
+- 对照:
