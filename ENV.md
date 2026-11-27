@@ -7,3 +7,5 @@
 - 编译: nvcc -O3 -std=c++17 -arch=sm_89 -lineinfo -Xptxas -v
 - 计时: cudaEvent / torch.cuda.Event, warm up 20次, 计时 100 次取中位数
 - 对照:
+    - cuBLAS: cublasSgemv
+    - Pytorch: torch.mv
